@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'HWTwoSelectAngular';
+
+  countries = {
+    USA: ['New York', 'Chicago', 'Dallas', 'Los Angeles'],
+    France: ['Paris', 'Lion', 'Cherburg', 'Marseille'],
+    Germany: ['Berlin', 'Drezden', 'Hamburg', 'Munich'],
+    Israel: ['Jerusalem', 'Tel-Aviv', 'Haifa', 'Rehovot'],
+  };
+
+  choiceHandler(event) {
+    console.log(event);
+  }
 }
